@@ -1,0 +1,25 @@
+x
+{
+ "template": 1,
+ "data":{
+    "updated":"2010-01-07T19:58:42.949Z",
+    "totalItems":1,
+    "startIndex":1,
+    "itemsPerPage":1,
+    "items":[
+        {"id":"B1T",
+         "created":"2015-11-19T07:07:03.000Z",
+         "updated":"2015-11-19T07:07:03.000Z",
+         "category":"File",
+         "title":"Test File B1T",
+         "description":"This might be a long description",
+         "tags":[
+            "B1T","Test","Files"
+         ],
+         "thumbnail":{
+            "default":"../default.jpg"
+         }         
+        }
+    ]
+ }
+}
