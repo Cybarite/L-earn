@@ -9,5 +9,8 @@
 
 * GFMD
 
+## Started Using Atom
 
+* it has Markdown Preview
 
+* need to confirm that it handles GFMD

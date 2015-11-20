@@ -16,6 +16,7 @@ x
          "tags":[
             "B1T","Test","Files"
          ],
+         "purchasePrice": 450.00
          "thumbnail":{
             "default":"../default.jpg"
          }         

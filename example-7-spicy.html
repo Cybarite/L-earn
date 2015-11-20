@@ -13,5 +13,40 @@
  <button ng-click="jalapenoSpicy()">Jalapeño</button>
  <p>The food is {{spice}} spicy!</p>
 </div>
+
+
+<div ng-repeat="n in [42, 42, 43, 43] track by $index">
+  {{n}}
+</div>
+
+
+<div ng-app id="ng-app">
+    <hr />
+    <a href="#" ng-model="collapsed" ng-click="collapsed=!collapsed">Click here to <strong>Toggle (show/hide)</strong> description</a>
+
+    <div ng-show="collapsed">I am description for the above title, which was collapsed by default</div>
+    <hr />
+    
+    <a href="#" ng-model="expandme" ng-click="expandme=true">Click here to <strong>SHOW</strong> description</a>
+
+    <div ng-show="expandme">I am description for the above title, which was collapsed by default</div>
+    <hr />
+    
+    <a href="#" ng-model="collapseme" ng-click="collapseme=true">Click here to <strong>HIDE</strong> description</a>
+
+    <div ng-hide="collapseme">I am description for the above title, which was collapsed by default</div>
+    <hr />
+    <label for="chklabl">
+    	<input type="checkbox" ng-model="checked" name="chklabl" id="chklabl"> Check this checkbox to show/hide this example is from AngularJS API Reference
+    </label>
+
+    <br/>
+	Show: <span ng-show="checked">I show up when your checkbox is checked.</span>
+	<br/>
+	Hide: <span ng-hide="checked">I hide when your checkbox is checked.</span>
+    <hr />
+</div>
+
+
 </body>
 </html>
