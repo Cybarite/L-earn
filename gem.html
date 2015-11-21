@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gem Example - Learn Angular Example Videos</title>
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js">
+  </script>
+  <script
+    src="app.js">
+  </script>
+  <link rel="stylesheet" type="text/css" href="/mm.css" />
+</head>
+<body ng-app="store"
+  ng-controller="StoreController as store"
+>
+  <div ng-hide="store.product.soldOut">
+ <p>Name: {{ store.product.name}}</p>
+<p>Price: ${{ store.product.price}}</p>
+
+<button ng-show="store.product.canPurchase">Add to Cart</button>
+</div>
+
+</body>
+</html>
