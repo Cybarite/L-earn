@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example - Simple Show Hide Section</title>
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js">
+  </script>
+  <script
+    src="spicy.js">
+  </script>
+  <link rel="stylesheet" type="text/css" href="/mm.css" />
+</head>
+  <body ng-app="spicyApp1">
+
+
+
+<div ng-app id="ng-app">
+  <a href="#" ng-model="collapsed" ng-click="collapsed=!collapsed">Click here to <strong>Toggle (show/hide)</strong> description</a>
+
+  <div ng-show="collapsed">I am description for the above title, which was collapsed by default</div>
+  <hr />
+
+  <label for="chklabl">
+    <input type="checkbox" ng-model="checked" name="chklabl" id="chklabl"> Check this checkbox to show/hide this example is from AngularJS API Reference
+  </label>
+
+  <br/>
+  Show: <span ng-show="checked">I show up when your checkbox is checked.</span>
+  <br/>
+  Hide: <span ng-hide="checked">I hide when your checkbox is checked.</span>
+  <hr />
+
+</div>
+
+
+</body>
+</html>
