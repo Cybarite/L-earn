@@ -14,11 +14,23 @@
 <body ng-app="store"
   ng-controller="StoreController as store"
 >
-  <div ng-hide="store.product.soldOut">
- <p>Name: {{ store.product.name}}</p>
-<p>Price: ${{ store.product.price}}</p>
+  <div ng-repeat="product in store.products">
+<h1>Name: {{ product.name}}</h1>
+<h2>Price: ${{ product.price}}</h2>
 
-<button ng-show="store.product.canPurchase">Add to Cart</button>
+<button ng-show="product.canPurchase">Add to Cart</button>
+
+</div>
+
+<div>
+  <section>
+    <ul class="nav nav-pills">
+      <li>
+          <a href>Description</a>
+      </li>
+    </ul>
+  </section>
+
 </div>
 
 </body>
