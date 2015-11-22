@@ -1,6 +1,6 @@
 # BrowserSync
 
-This was recommended by failing
+This was recommended
 
 Try:
 

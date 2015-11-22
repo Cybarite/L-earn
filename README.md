@@ -13,4 +13,4 @@
 
 * it has Markdown Preview
 
-* need to confirm that it handles GFMD
+* need to confirm that it handles git flavored Markdown
