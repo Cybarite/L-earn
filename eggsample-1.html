@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example - example-example7</title>
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js">
+  </script>
+  <script
+    src="elements.js">
+  </script>
+  <link rel="stylesheet" type="text/css" href="/mm.css" />
+</head>
+<body>
+  <!-- enter items as csv like "foo, bar" -->
+  <input ng-list ng-model="elements">
+
+  <!-- render both items in a list -->
+  <ul ng-repeat="element in elements">
+    <li ng-bind="element">
+  </ul>
+</body>
+</html>
