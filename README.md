@@ -14,3 +14,5 @@
 * it has Markdown Preview
 
 * need to confirm that it handles git flavored Markdown
+ * of course it does
+* will display a clip in the editor ... nice
